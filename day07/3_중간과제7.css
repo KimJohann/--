@@ -1,0 +1,49 @@
+.parent{
+    width: 700px;
+    height: 700px;
+    background-color: beige;
+    position: relative;
+    margin: 0 auto;
+}
+.box{
+    width: 100px;
+    height: 70px;
+    background-color: yellow;
+    border-radius: 10px;/* 둥근모서리 */
+    /* 컨텐츠/내용물 가로/세로 가운데 정렬 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+}
+/* 하위 요소 위치 지정 */
+.box1{
+    left : 300px;/* 전체 700px - 가운데 350px - 나의 너비 절반 : 50px */
+    top : 50px;
+}
+
+.box2{
+    left : 150px;
+    top : 120px;
+}
+
+.box3{
+    left : 450px;
+    top : 120px;
+}
+
+.box4{
+    left : 150px;
+    top : 260px;
+}
+
+.box5{
+    left : 450px;
+    top : 260px;
+}
+
+.box6{
+    left : 300px;
+    top : 330px;
+}
