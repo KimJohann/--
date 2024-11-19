@@ -7,3 +7,5 @@ push : 추가/변경 된 내용을 원격 저장소에 업로드 작업
 [설정확인] git config --global user.name
 [git user.email 설정]git config --global user.email ""
 [설정확인] git config --global user.email
+
+
