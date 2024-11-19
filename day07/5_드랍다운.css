@@ -1,0 +1,79 @@
+
+/* ----------------------------------부분 드랍메뉴 */
+#header{
+    background-color: beige;
+}
+ul{
+    list-style-type: none;
+}
+#header>ul{
+    display: flex;
+    justify-content: center;
+}
+#header>ul>li{
+    padding: 20px;
+    position: relative;
+}
+/* 드롭다운 하위 메뉴는 absolute로 잡아준다. */
+#header .submenu{
+    display: none;
+    background-color: green;
+    position: absolute;/* 절대적인 위치 조상이 relative를 가지고 있어야한다.*/
+    top: 60px;
+    padding: 10px;
+    text-align: center;
+    
+}
+/* 선택자:hover 변경할 선택자{} */
+#header>ul>li:hover> .submenu{
+    display: block;
+}
+
+/* ---------------------------------전체 드랍 */
+#header2{
+    background-color: skyblue;
+}
+#header2>ul{
+    display: flex;
+    justify-content: center;
+}
+#header2>ul>li{
+    padding: 10px;
+}
+#header2{
+    position: relative;
+}
+#header2 .submenu2{
+    display: none;
+    position: absolute;
+    background-color: skyblue;
+    width: 100%;
+    top:45px;
+    
+}
+/* 지정됨 ul 마크업을 hover했을때 서브메뉴 전체 열기 */
+#header2>ul:hover .submenu2{
+    display: block;
+}
+
+
+#header3>ul{
+    display: flex;
+    width: 1000px;
+}
+#header3>ul>li{
+    width: 200px;
+    background-color: green;
+}
+.sub{display: flex; display: none; width: 1000px;background-color: blueviolet;}
+.sub>ul{
+    width: 1000px;
+}
+.sub>ul>li{
+    background-color: blueviolet;
+    
+}
+#header3>ul:hover ~ .sub{
+    display: block;
+    display: flex;
+}
