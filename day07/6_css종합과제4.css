@@ -57,17 +57,13 @@
     background-color: white;
 }
 #bottomHeader>ul{
-    margin: 0 auto;
     display: flex;
     align-items: center;
     z-index: 999;
-    /* position: sticky; */
-    
-    /* background-color: red; */
     height: 60px;
 }
 .logo{
-    font-size: 25px;
+    font-size: 28px;
     /* font-weight: bold; */
 }
 .inputSearch{
@@ -86,12 +82,16 @@
     background-color: white;
     display: none;
     position: absolute;
-    top: 50px;
-    left: 10px;
+    top: 55px;
+    left: 5px;
 }
 #bottomHeader>ul>li>ul>li{/* 하위메뉴 */
-    padding: 5px 10px;
+    padding: 15px 10px;
     z-index: 9999;
+    width: 100px;
+}
+#bottomHeader>ul>li>ul>li:hover{
+    color: #ccc;
 }
 #bottomHeader>ul>li:hover>ul{
     display: block;
