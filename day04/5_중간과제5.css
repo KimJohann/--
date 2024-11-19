@@ -1,0 +1,29 @@
+.wrap > div{
+    border: 1px solid #ccc;
+    width: 80%;
+}
+.imgBox{
+    width: 100%;
+    padding: 15px;
+}
+.imgBox > img{
+    width: 100%;
+    height: 100%;
+}
+.contentBox{
+    padding: 15px;
+}
+.contentBox > div{
+    margin: 15px 15px;
+}
+.fontOrange{
+    color: orange;
+    font-weight: bold;
+}
+.contentTitle{
+    font-weight: bold;
+    font-size: 23px;
+}
+.contentPrice{
+    font-weight: bold;
+}

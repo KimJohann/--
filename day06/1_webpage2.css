@@ -1,0 +1,176 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* border: 1px solid green; */
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+li{
+    list-style-type: none;
+}
+
+/* 헤더 */
+#header{
+    width: 1280px;/* 가로 사이즈 */
+    margin: 10px auto;/* 가로 가운데 정렬 */
+    display: flex;/* 하위 요소들의 배치 방법 */
+    flex-direction: row;/* 배치방향 : 기본값/생략가능 */
+    justify-content: space-between;/* 양쪽끝에 균등 정렬 : 가로정렬 */
+    align-items: center;/* 세로 정렬 */
+}
+#topMenu{
+    display: flex;
+    justify-content: flex-end;/* 오른쪽 붙이기 */
+}
+#topMenu >li {
+    margin : 0px 5px;
+}
+#topMenu >li:nth-child(2n){
+    width: 1px;
+    border-right: 1px solid black;
+}
+#mainMenu{
+    display: flex;
+    justify-content: flex-end;/* 오른쪽 붙이기 */
+}
+
+/* 여러개 선택자 선택하기 : 선택자1 , 선택자2 */
+/* 하위 선택자 선택하기 : 선택자1 > 하위선택자 */
+#mainMenu>li{
+    font-size: 20px;
+    margin-left: 100px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+/* ------------------------------메인 슬라이드 */
+#mainSlider{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 30px 0px 30px 0px;
+}
+#mainSlider img{
+    width: 100%;
+    height: 100%;
+}
+/* --------------------- 본문*/
+#main{
+    width: 1280px; margin: 0 auto;
+    display: flex;
+    justify-content: space-between;/* 양끝정렬 */
+}
+#sideBar{
+    width: 250px;
+}
+#sideBar>h3{
+    background-color: #0ca9a2;/* 배경색상 */
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+}
+#sideBar>p{
+    line-height: 160%;
+    padding: 5px;
+
+}
+#sideBar > div > input[type="text"]{
+    width: 150px;/* 입력상자 가로 사이드 */
+    height: 30px;
+    border-radius: 10px;/* 둥근모서리 */
+    padding: 1px 6px;/* 입력상자 안쪽 여백 */
+}
+#sideBar > div > input[type="button"]{
+    /* 버튼 사이즈 늘리는 방법 1.width, 2.padding*/
+    padding: 5px 10px;
+}
+#sideBar > h4{
+    border-top : 2px solid black;
+    border-bottom : 1px solid #ccc;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 18px;
+}
+#sideBar > ul >li{
+    padding: 3px 10px;/* 안쪽 여백 */
+    margin : 10px 0px;
+}
+#content{
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+}
+#leftCont{
+    width : 450px;
+}
+#leftCont>div{
+    margin-bottom: 15px;
+}
+#leftCont > div > h3{
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+#alertCont > li{
+    padding: 10px 0px 15px 0px;
+}
+#boardCont > li{
+    padding: 10px 0px 15px 0px;
+}
+.marginSpan{
+    margin-left: 240px;
+}
+
+/* ------ 이미지 게시판 */
+#rightCont{
+    width: 500px;
+    /* border: 1px solid red; */
+}
+#rightCont > h3{
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+}
+#imgCont{
+    display: flex;
+    flex-wrap : wrap;
+    justify-content: center;
+    margin-top: 15px;
+}
+#imgCont > li{
+    width: 220px;
+    margin: 15px;
+}
+/* --------------------- 본문 끝*/
+
+/*--------------------------- 푸터 시작 */
+#footer{
+    width: 100%;
+    background: rgb(28, 42, 73);
+    margin: 0 auto;
+    color: white;
+    padding: 20px;
+}
+#footerTop{
+    display: flex;
+    width: 1280px;
+    margin: 0 auto;
+}
+#footerTop > li{
+    padding-right: 35px;
+}
+#footerBottom_wrap{
+    width: 1280px;
+    margin: 0 auto;
+}
+#footerBottom_wrap{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+#footerBottom_wrap > ul >li:nth-child(1){
+    font-size: 25px;
+    font-weight: bold;
+}
+/* ----------------------- */

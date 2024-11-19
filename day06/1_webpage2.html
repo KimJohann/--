@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='1_webpage2.css'>
+</head>
+<body>
+<div id="wrap">
+    <div id="header">
+        <div><img src="./img/logo.png" /></div><!-- 왼쪽 로고 -->
+        <div><!-- 오른쪽 메뉴 -->
+            <ul id="topMenu"><!-- 상단메뉴 -->
+                <li><a href="#">김지영(jyKim)님</a></li>
+                <li></li>
+                <li><a href="#">로그아웃</a></li>
+                <li></li>
+                <li><a href="#">정보수정</a></li>
+            </ul>
+            <ul id="mainMenu"><!-- 하단 메뉴 -->
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">출석부</a></li>
+                <li><a href="#">작품갤러리</a></li>
+                <li><a href="#">게시판</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- ------------------------- -->
+    <div id="mainSlider">
+        <div><img src="./img/main_bg.png" /></div>
+    </div>
+    <!-- ------------------------- -->
+    <div id="main">
+        <div id="sideBar"><!-- 컨텐츠 첫번째 박스 -->
+            <h3>The 베이킹</h3>
+            <p>안녕하세요. 쿠키와 빵 만들기 정보를 공유하고 소통하는 공간입니다.</p>
+            <div>
+                <input type="text" />
+                <input type="button" value="검색">
+            </div>
+
+            <h4>베이킹 요리</h4>
+            <ul>
+                <li>쿠키 만들기</li>
+                <li>빵 만들기</li>
+                <li>마카롱 만들기</li>
+            </ul>
+
+            <h4>최근 댓글</h4>
+            <ul>
+                <li>쿠키 재미있어요.</li>
+                <li>빵 좋아요</li>
+                <li>마카롱 만들기 추천</li>
+            </ul>
+        </div>
+        <div id="content">
+            <div id="leftCont">
+                <div>
+                    <h3>
+                        알림
+                    </h3>
+                    <ul id="alertCont"></ul>
+                </div>
+                <div>
+                    <h3>
+                        게시판
+                    </h3>
+                    <ul id="boardCont"></ul>
+                </div>
+            </div>
+
+
+            <div id="rightCont">
+                <h3>
+                    제빵 클래스
+                </h3>
+                <ul id="imgCont"></ul>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------------- -->
+    <div id="footer">
+        <ul id="footerTop">
+            <li><a href="#">The베이킹 소개</a></li>
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">저작권 소개</a></li>
+            <li><a href="#">이용안내</a></li>
+        </ul>
+        <div id="footerBottom">
+            <div id="footerBottom_wrap">
+                <ul>
+                    <li>문의전화</li>
+                    <li>123-1234</li>
+                    <li>10:00 ~ 18:00(launch 12:00 ~ 13:00)</li>
+                </ul>
+
+                <ul>
+                    <li>The 베이킹</li>
+                    <li>주소 : 경기도 안산시 한대앞역 123-1234</li>
+                    <li>전화 : 031-123-1234</li>
+                    <li>팩스 : 031-123-1234</li>
+                    <li>이메일 : asdfasdf@naver.com</li>
+                </ul>
+
+                <ul>
+                    <li>입금정보</li>
+                    <li>농협 : 123-123-123456</li>
+                    <li>The베이킹</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    const alertCont = document.querySelector("#alertCont");
+    for(let a=30; a>25; a--){
+        alertCont.innerHTML += `<li><span><a href='#'>쿠키클래스 연기합니다.</a></span><span class='marginSpan'>09.${a}</span></li>`
+    }
+
+    const boardCont = document.querySelector("#boardCont");
+    for(let a=30; a>25; a--){
+        boardCont.innerHTML += `<li><span><a href='#'>쿠키클래스 연기합니다.</a></span><span class='marginSpan'>09.${a}</span></li>`
+    }
+    
+    const imgCont = document.querySelector("#imgCont");
+    for(let a=1; a<5; a++){
+        imgCont.innerHTML += `
+                    <li>
+                        <div>
+                            <img src="./img/bread${a}.png" />
+                        </div>
+                        <div>
+                            도너츠만들기 [3]
+                        </div>
+                        <div>
+                            23.06.13
+                        </div>
+                    </li>`
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <div class="tableBox"></div>
+    <div class="cross"></div>
+    <script>
+      const dateArry = ["일","월","화","수","목","금","토"];
+      const dateCount = 31;
+      const tableBox = document.querySelector('.tableBox');
+      let dateHtml = `<table border="1">`;
+            dateHtml += `<tr>`;
+                dateArry.forEach((k)=>{
+                    dateHtml += `<td>${k}</td>`
+                })
+            dateHtml +=`</tr>`;
+        
+            for(var a=0; a< dateCount; a++){
+               if(a % dateArry.length === 0 ) dateHtml += `<tr>`;
+                dateHtml += `<td>${a+1}</td>`
+                if(a+1 % dateArry.length === 0) dateHtml += `</tr>`;
+            }
+            dateHtml += `</table>`
+            tableBox.innerHTML = dateHtml;
+    </script>
+</body>
+</html>

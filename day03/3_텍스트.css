@@ -1,0 +1,43 @@
+/* 
+    - css 기본구조
+        선택자 {속성명 : 속성값;}
+        어디에 {무엇을 : 어떻게;}
+*/
+
+/* 
+    웹폰트 vs 일반폰트
+*/
+@font-face {
+    font-family: 'CookieRun-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/CookieRun-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/*title 이라는 이름을 가진 클래스 마크업 꾸미기*/
+.title{
+    font-family: "궁서","굴림";
+    /* 글꼴 : 사용자 pc에 설치된 글꼴만 기능*/
+    /* 웹폰트(눈누vs구글) : 폰트제공하는 서버로부터 글꼴 사용 */
+    font-size: 30px;/* 글꼴 크기 */
+    font-style: italic;
+    font-weight: bold;/* 글꼴 진하게, h3 마크업은 기본적으로 진하게 포함 */
+}
+.content{
+    font-family: 'CookieRun-Regular', '맑은고딕';
+    color: gold;
+    word-spacing: 10px;/* 단어 간격 : 어간 */
+    letter-spacing: 5px;/* 글자 간격 : 자간 */
+    line-height: 180%;/* 줄간격, % */
+}
+.writer{
+    text-align: center; /* 택스트 가로 정렬 */
+
+    /* 텍스트 선긋기 : underline(밑줄), overline(윗줄) line-through(취소선) */
+    text-decoration: underline overline line-through;
+    
+    /* 텍스트 그림자 : x축 y축 흐림정도 색상 */
+    text-shadow: 0px 0px 10px red;
+
+    /* 색상 : 1.색상명 2.rgb색상[0~255] 3.헥사코드[16진수] */
+    color : red;
+}

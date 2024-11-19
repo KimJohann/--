@@ -1,0 +1,49 @@
+/* 하나의 (div)박스모델 */
+.box{
+    border: 1px solid red;
+    width: 100px;
+}
+.flexbox1{
+    border : 1px solid blue;
+    width: 250px;
+    /* 현재 지정된 선택자의 하위 마크업들을 가로배치 방법 */
+    display: flex;
+    flex-wrap: nowrap;
+    /* nowrap  : 만약에 현재 선택자의 크기보다 하위 요소의 크기가 더 크면 하위 요소들을 크기를 자동으로 자동맞춤 적용된다.
+        wrap : 자식들의 요소 크기를 유지 하면서 자동으로 줄바꿈 한다.
+    */
+
+    /* flex-wrap: wrap; */
+}
+.flexbox2{
+    border: 1px solid blue;
+    width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flexbox3{
+    width: 250px;
+    border: 1px solid blue;
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+
+.flexbox4{
+    width: 250px;
+    border : 1px solid blue;
+    display: flex;
+    flex-direction: row;
+    /* flex-direction : 하위 요소들의 배치방향을 정의 하는 속성
+        -row (기본값) : 가로배치
+        -column : 세로방향
+    */
+    /* flex-direction: ; */
+}
+
+.flexbox5{
+    width: 250px;
+    border : 1px solid blue;
+    display: flex;
+    flex-direction: column;
+}

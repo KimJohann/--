@@ -1,0 +1,29 @@
+*{
+    border : 3px solid red;
+}
+
+.s1{
+    display: inline; /* span 기본값 */
+    width: 200px;
+    height: 200px;
+    margin : 20px 30px;
+    padding: 20px 30px;
+}
+
+.s2{
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin: 20px 30px;
+    padding: 20px 30px;
+}
+.s3{
+    display: inline-block;/* input 기본값 */
+    width: 100px;
+    height: 100px;
+    margin: 20px 30px;
+    padding: 20px 30px;
+}
+.s4{
+    display: none;
+}

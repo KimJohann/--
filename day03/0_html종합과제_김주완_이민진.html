@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>종합과제</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <style>
+        *{padding: 0; margin: 0 auto; text-align: center;}
+        .wrap{padding: 20px; border: 1px  solid skyblue; border-radius: 20px;}
+        table{border-collapse: collapse; white-space: nowrap;}
+        table tr th{padding: 10px;}
+        table tr td{padding: 10px;}
+        div{margin : 15px;}
+        hr{margin : 7px;}
+        form {margin-top: 20px;}
+        .imgBox{width: 20%; display: inline-block;}
+        .imgBox > img{width: 100%; height: 100%;}
+        .lineBox{border: 1px solid green;}
+        .submitBox {display: flex; justify-content: center;}
+        .sendBox{width : 75px; height: 75px; background-color:  #BDBDBD; border-radius: 100%; padding: 5x; border : 1px solid white; color: white; cursor: pointer;}
+        .sendBox:hover{background-color:  #8041D9;}
+    </style>
+</head>
+<body>
+    <!-- 
+        HTML 종합과제
+            - 000업체의 설문지 만들기
+            - 예] 삼성병원, 스타벅스, 가스점검 설문지
+
+        -상단 로고/이미지 또는 업체명 넣어주세요.
+        -설문자의 이름 입력을 받아주세요.
+        -질문 5개 이상으로 만들기
+        -질문에 대한 응답 체크박스 만들기
+            ex)만족도를 5점 4점 3점 2점 1점
+        -건의사항 긴글로 받아주세요.
+        -설문 날짜랑 시간도 받아주세요.
+        -제출버튼 만들어 주세요.
+        - HTML 위주로 구축하되 추가적인마크업과 디자인 알아서 꾸미기
+        
+        제출방법
+            1. 종이에 본인이 구현할 HTML를 스케치 해서 A4 종이 제출
+            2. 구현된 html의 라이브서버로 카카오톡방 제출
+    -->
+
+
+    <!-- 
+        김주완, 이민진 조 설문지 제출
+    -->
+<div class="wrap">
+    <h3>(주)사성 무선이어폰 만족도 조사</h3>
+    <div class="imgBox">
+        <img src="./이어폰.png" />
+    </div>
+    <form>
+        <div>
+            <span>작성자의 이름을 입력해 주세요.</span>
+            <td colspan="6"><input type="text" placeholder="이름" name="name"/></td>
+        </div>
+        <div>
+            <span>설문에 참여한 날짜를 입력해주세요</span>
+            <td colspan="6"><input type="datetime-local"/></td>
+        </div>
+        <table border="1" style="text-align: center;">
+            <tr>
+                <th>질문</th>
+                <th>매우 나쁨</th>
+                <th>나쁨</th>
+                <th>보통</th>
+                <th>좋음</th>
+                <th>매우 좋음</th>
+            </tr>
+            <tr>
+                <td>이전에 사용하신 이어폰은 만족스러웠나요?</td>
+                <td><label><input type="radio" name="prevUX"></label></td>
+                <td><label><input type="radio" name="prevUX"></label></td>
+                <td><label><input type="radio" name="prevUX"></label></td>
+                <td><label><input type="radio" name="prevUX"></label></td>
+                <td><label><input type="radio" name="prevUX"></label></td>
+            </tr>
+            <tr>
+                <td>이전에 사용했던 제품과 현 제품을 비교하면 어떤가요?</td>
+                <td><label><input type="radio" name="nextUX"></label></td>
+                <td><label><input type="radio" name="nextUX"></label></td>
+                <td><label><input type="radio" name="nextUX"></label></td>
+                <td><label><input type="radio" name="nextUX"></label></td>
+                <td><label><input type="radio" name="nextUX"></label></td>
+            </tr>
+            <tr>
+                <td>제품의 음질을 평가해주세요.</td>
+                <td><label><input type="radio" name="soundUX"></label></td>
+                <td><label><input type="radio" name="soundUX"></label></td>
+                <td><label><input type="radio" name="soundUX"></label></td>
+                <td><label><input type="radio" name="soundUX"></label></td>
+                <td><label><input type="radio" name="soundUX"></label></td>
+            </tr>
+            <tr>
+                <td>제품의 디자인을 평가 해 주세요.</td>
+                <td><label><input type="radio" name="dsUX"></label></td>
+                <td><label><input type="radio" name="dsUX"></label></td>
+                <td><label><input type="radio" name="dsUX"></label></td>
+                <td><label><input type="radio" name="dsUX"></label></td>
+                <td><label><input type="radio" name="dsUX"></label></td>
+            </tr>
+            <tr>
+                <td>제품의 가격의 만족도는 어떤가요?</td>
+                <td><label><input type="radio" name="priceUX"></label></td>
+                <td><label><input type="radio" name="priceUX"></label></td>
+                <td><label><input type="radio" name="priceUX"></label></td>
+                <td><label><input type="radio" name="priceUX"></label></td>
+                <td><label><input type="radio" name="priceUX"></label></td>
+            </tr>
+        </table>
+        <div class="lineBox"></div>
+        <div>
+            <span>제품의 가장 마음에 드는 사항은 어떤건가요?(중복가능)</span>
+            <div>
+                <label><input type="checkbox" name="selectFV">디자인</label>
+                <label><input type="checkbox" name="selectFV">음질</label>
+                <label><input type="checkbox" name="selectFV">가격</label>
+                <label><input type="checkbox" name="selectFV">착용감</label>
+                <label>기타<input type="text" name="selectFVT"></label>
+            </div>  
+        </div>
+        <div class="lineBox"></div>
+        <div>
+            <span>제품의 가장 마음에 들지 않는 사항은 어떤건가요?(중복가능)</span>
+            <div>
+                <label><input type="checkbox" name="selectD">디자인</label>
+                <label><input type="checkbox" name="selectD">음질</label>
+                <label><input type="checkbox" name="selectD">가격</label>
+                <label><input type="checkbox" name="selectD">착용감</label>
+                <label>기타<input type="text" name="selectDT"></label>
+            </div>
+        </div>
+        <div class="lineBox"></div>
+        <div>
+            <span>제품에 대한 종합적인 평가나 건의사항이 있으면 작성해주세요.</span>
+            <div>
+                <textarea cols="50%" rows="15px"></textarea>
+            </div>
+        </div>
+        <div class="submitBox">
+            <label><input type="submit" value="전송하기" class="sendBox"></label>
+            <label><input type="reset" value="다시작성" class="sendBox"></label>
+        </div>
+    </form>
+</div>
+</body>
+</html>

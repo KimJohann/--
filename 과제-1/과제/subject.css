@@ -1,0 +1,327 @@
+
+
+*{margin: 0px; padding: 0px; box-sizing: border-box;font-family: 'RiaSans-ExtraBold';}
+a{text-decoration: none black;}
+li{list-style-type: none;}
+/*이상 공통설정*/
+
+@font-face {
+    font-family: 'RiaSans-ExtraBold';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2410-1@1.0/RiaSans-ExtraBold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+#header{margin: 0 auto; width: 100%;}
+#headcontainer{width: 1100px;}
+#headcontainer{
+    display: flex;
+    margin: 0px auto;
+    padding-top: 24px;
+    height: 120px;
+    padding: 20px;
+}
+#topmenu{
+    padding: 15px;
+    display: flex;
+}
+#topmenu > ul{display: flex;
+    align-items: center;}
+
+#weblogo > img{
+    width: 120px; height: 82px;
+}
+#topmenu > ul > li{
+    padding: 0px 19px 0px 0px;
+    font-size: 16px;
+    color: #502416;
+    font-weight: bold; font-size: 20px;
+    font-family: 'RiaSans-ExtraBold';
+}
+.lidown{
+    font-size: 8px;
+}
+.branch{
+    background-color: #502416;
+    color: white;
+    width: 168px;
+    height: 50px;
+    text-align: center; font-weight: bold; font-size: 19px;
+    font-family: 'RiaSans-ExtraBold';
+    border-radius: 25px;
+    padding: 10px;
+}
+.order{
+    background-color: #d72300;
+    color: white;
+    width: 168px;
+    height: 50px;
+    text-align: center; font-weight: bold; font-size: 19px;
+    font-family: 'RiaSans-ExtraBold';
+    border-radius: 25px;
+    padding: 10px;
+    margin-left: 15px;
+}
+/*==============================================*/
+#footerwrap{
+    background-color: #2b0200;
+    height: 680px;
+}
+#footer{
+    width: 1150px;
+    margin: 0 auto;
+}
+.fbmenu{
+    display: flex;
+    border-bottom: 1px solid #bba391;
+    padding: 50px;
+    justify-content: space-between;
+}
+.fbmenu > li{
+    color: #f5ebdc;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'RiaSans-ExtraBold';
+}
+.fbmenu > li > ul{
+    color: #bba391;
+    font-size: 15px;
+    font-family: 'SDGothic';
+    padding-top: 10px;
+    line-height: 30px;
+}
+.webcontainer{
+    color: #bba391;
+    font-weight: bold;
+    font-size: 14px;
+    display: flex; justify-content: space-between;
+    padding: 20px 0px;
+}
+.copyright > img{
+    padding-bottom: 20px;
+    padding-top: 15px;
+}
+.copyright{
+    line-height: 20px;
+}
+.footermenu > ul{
+    padding-top: 15px;
+    display: flex;
+    font-size: 14px;
+    font-weight: bold;
+}
+.wordline{
+    font-size: 12px;
+}
+.footerbtn{
+    display: flex; justify-content: end;
+    padding: 20px;
+}
+.career{
+    background-color: #2b0200;
+    color: #bba391;
+    width: 120px;
+    height: 32px;
+    text-align: center; font-weight: bold; font-size: 14px;
+    font-family: 'SDGothic';
+    border: 1px solid #bba391;
+    border-radius: 25px;
+    padding: 5px;
+}
+.branchsmall{
+    background-color: #2b0200;
+    color: #bba391;
+    width: 120px;
+    height: 32px;
+    text-align: center; font-weight: bold; font-size: 14px;
+    font-family: 'SDGothic';
+    border: 1px solid #bba391;
+    border-radius: 25px;
+    padding: 5px;
+    margin-left: 15px;
+}
+
+
+/* ---------------------------------------------------------------- */
+
+#content{
+    width: 1200px;
+    padding: 0;
+    margin : 0 auto;
+    /* box-sizing: border-box; */
+    list-style-type: none;
+}
+#content a{
+    color: inherit;
+    text-decoration: none;
+}
+#content>div{
+    width: 1200px;
+}
+#content img{
+    width: 100%;
+    height: 100%;
+}
+#content iframe{
+    width: 100%;
+    height: 100%;
+}
+/* -------------------------------- */
+#mainSlide{
+    width: 1200px;
+    height: 400px;
+}
+/* --------------------------------- */
+#iframeSlid{
+    width: 1200px;
+    height: 500px;
+}
+/* ---------------------------------- */
+.divLine{width: 1px; border-left: 1px solid #ccc;}
+/* ---------------------------------- */
+#snsIcon{
+    width: 1200px;
+    height: 150px;
+    background-color: #683a2f;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.snsIcon_innerBox{
+    display: flex;
+}
+.snsIcon_innerBox > div:nth-child(1){/* sns icon 이미지 */
+    width: 70px;
+    height: 70px;
+}
+.snsIcon_innerBox > div:nth-child(2){/* sns icon 글자  */
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+}
+.snsBgColor{
+    border-radius: 5px;
+    background-color: white;
+    color: #683a2f;
+    padding: 3px;
+}
+/* ---------------------------------- */
+#footBanner{
+    width: 1200px;
+    display: flex;
+}
+#footBanner>a{
+    width: 600px;
+    height: 400px;
+    background-color: #b08972;
+}
+#bugerApp{
+    background-image: url("./img/bgimg1.png");
+    background-position : 50%,50%
+}
+#bugerDeli{
+    background-image: url("./img/bgimg2.png");
+    background-position : 50%,50%
+}
+/* ---------------------------------- */
+#findBuger{
+    width: 1200px;
+    padding: 20px;
+}
+#findBuger>div{
+    width: 1200px;
+    /* background-color: red; */
+}
+#findBuger_top{/* 탑부분 매장찾기, 주변, 버튼 */
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 70px;
+}
+#findBuger_top >div {
+    margin-top: 15px;
+}
+#findBuger_top>div:nth-child(1){/* 매장찾기 */
+    font-size: 50px;
+    font-weight: bold;
+    color: #683a2f;
+}
+#findBuger_top>div:nth-child(2){/* 주변 멘트 */
+    font-size: 30px;
+    font-weight: bold;
+}
+#findBuger_top>div:nth-child(3){/* 매장찾기버튼 */
+    background-color: red;
+    margin-top: 35px;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 30px;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+    color: white;
+}
+#findBuger_bottom{
+    width: 1200px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    font-weight: bold;
+}
+.findBuger_bottom_innderBox{
+    width: 100px;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+.findBuger_bottom_innderBox>div:nth-child(1){/* 아이콘부분 */
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+}
+.fontRed{/* 빨간 폰트부분 */
+    color: red;
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+}
+/* ------------------------------------- */
+/* 바디 마지막 */
+#contentFooter{
+    background-image: url("./img/footbackground.png");
+    width: 1200px;
+    height : 200px;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+#contentTime{
+    width: 650px;
+    margin-left: 100px;
+}
+#contentTime>div:nth-child(1){/* 집에서 만나는 버거킹 */
+    font-size: 28px;
+    font-weight: bold;
+}
+#contentTime>div:nth-child(2){/* 딜리버리 전화주문 안내 */
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+#contentTel{
+    width: 350px;
+    font-weight: bold;
+    font-size: 30px;
+    margin-left: 20px;
+}
+#contentTel img{
+    width: 50px;
+    height: 50px;
+}
