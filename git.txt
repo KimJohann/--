@@ -1,0 +1,9 @@
+Repository : 저장소 / 프로젝트의 파일이나 폴더를 저장하는 저장소
+comit : 파일을 추가/변경 된 내용을 저장소에 저장하는 작업
+push : 추가/변경 된 내용을 원격 저장소에 업로드 작업
+
+깃설치후 - 터미널 -> bash ->
+[git user.name 설정]git config --global user.name ""
+[설정확인] git config --global user.name
+[git user.email 설정]git config --global user.email ""
+[설정확인] git config --global user.email
