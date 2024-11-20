@@ -114,10 +114,10 @@
 }
 
 /* ---------------------------------------- 투데이베스트 */
-#TODAYBEST{
+.TODAYBEST{
     margin-top: 200px;
 }
-#TODAYBEST>div{
+.TODAYBEST>div{
     margin-bottom: 20px;
 }
 .boldTitle{
