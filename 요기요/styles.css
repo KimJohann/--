@@ -144,6 +144,7 @@
     background-color: white;
     border: 1px solid #ccc;
     overflow: hidden;
+    box-sizing: border-box;
 }
 .newsroom-item:hover > img{
     transform: scale(1.2);
