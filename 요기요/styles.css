@@ -10,13 +10,12 @@
 }
 
 .container {
-    max-width: 100%; /* 전체 너비 사용 */
+    max-width: 100%;
     margin: 0 auto;
 }
 
 .hero {
-    
-    background-image: url('https://via.placeholder.com/1200x800'); /* 임의의 이미지 */
+    background-image: url('./img/main_slide1.png');
     background-size: cover;
     /* border: 1px solid black; */
     height: 70vh;
@@ -28,22 +27,22 @@
     padding-left: 50px;
 }
 
-.hero-content {/* 메인슬라이드에 삽입된 문구*/
+.hero-content {/* 메인슬라이드에 삽입된 문구 박스*/
     max-width: 600px;
-    
 }
 
 .hero-content>h1{
-    /* 메인슬라이드에 삽입된 문구 타이틀 */
-    font-size: 2.5em;
+    /* 메인슬라이드에 삽입된 타이틀 문구 */
+    font-size: 2.7em;
     color: white;
 }
-.hero-content>p{
-    font-size: 1.2em;
+.hero-content>p{/* 메인슬라이드에 삽입된 내용 문구 */
+    font-size: 1.4em;
     margin-top: 20px;
     color: white;
+    width: 400px;
 }
-.scroll-down {
+.scroll-down {/* 메인슬라이드 중앙 아래쪽 스크롤 아이콘 */
     /* background-color: red; */
     text-align: center;
     margin: auto;
@@ -55,65 +54,71 @@
 }
 
 .service {
-    margin-top: 150px;
+    margin-top: 100px;
     text-align: center;
 }
 
-.service>h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    font-weight: bold;
-}
-.service>h2>hr{
-    width: 20px;
-    margin : 0 auto;
-    border-color: red;
-    margin-top: 10px;
-}
+
 .service-navigation {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative; /* 위치 조정 */
+    position: relative;
 }
 
-.service-items {
+.service-items {/* service 슬라이드 담는 박스 */
     display: flex;
     justify-content: center;
-    align-items: center; /* 수직 정렬 */
+    align-items: center;
+    margin-top: 20px;
 }
 
-.service-item {
+.service-item {/* service 개별 슬라이드 */
     position: relative;
-    flex: 0 0 auto; /* 아이템 크기 자동 설정 */
-    margin: 0 20px; /* 이미지 간 여백 설정 */
+    flex: 0 0 auto; 
+    margin: 0 20px; 
     width: 75%;
 }
 .service-items >.blurred{
     width: 70%;
-    /* border: 1px solid black; */
+
 }
 .service-item img {
     width: 100%;
     height: auto;
-    
 }
 
-.blurred img {
-    width: 100%; /* 흐린 이미지는 중앙 이미지보다 작게 설정 */
+.service-item iframe{
+    float: left;
+}
+
+.service > p{/* 배달앱 최초 전국 즉시 장보기 서비스 */
+    font-weight: bold;
+    font-size: 28px;
+    margin-top: 10px;
+}
+.yogiyo-logo {
+    width: 9%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.yogiyo-logo img{
+    width: 100%;
+    height: 100%;
+}
+
+.blurred img {/* 흐리게 처리한 사이드 이미지들 */
+    width: 100%;
     height: auto;
     filter: blur(1px); /* 흐리게 처리 */
 }
 
-
+/* 뉴스룸 시작 */
 .newsroom {
-    /* padding: 50px 20px; */
-    text-align: center;
-}
-
-.newsroom h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
+    margin-top: 150px;
+    padding: 130px 0 190px;
+    background-color: #f5f5f6;
+    position: relative;
 }
 
 .newsroom-navigation {
@@ -123,29 +128,78 @@
     position: relative;
 }
 
-.newsroom-items {
+.newsroom-items {/* 뉴스룸 슬라이드 담는 전체 박스 */
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
+    
 }
 
 .newsroom-item {
     position: relative;
-    flex: 0 0 auto; /* 아이템 크기 자동 설정 */
-    margin: 0 5px; /* 이미지 간 여백 설정 */
+    flex: 0 0 auto;
+    margin: 0 10px; /* 이미지 간 여백 */
     width: 20%;
+    background-color: white;
+    border: 1px solid #ccc;
+    overflow: hidden;
 }
-
+.newsroom-item:hover > img{
+    transform: scale(1.2);
+    transition-duration: 0.3s;
+}
+.newsroom-item:hover:not(.blurred){
+    border:5px solid red
+}
 .newsroom-item img {
-    height: auto;
-    width: 100%; /* 뉴스 이미지 크기 설정 */
+    height: 100%;
+    width: 100%;
+}
+.newsroom-content{/* 보도자료,요기요....., 날짜  박스*/
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    position: relative;
+    z-index: 999;
+    background-color: white;
+}
+.newsroom-content>div{
+    padding: 5px;
+}
+.newsroom-content>div:nth-child(1)/* 보도자료 */{
+    color: rgb(57, 115, 241);
+}
+.newsroom-content>div:nth-child(2)/* 요기요, 화제의.... */{
+    font-size: 14px;
+}
+.newsroom-content>div:nth-child(3)/* 날짜 */{
+    font-size: 12px;
+    color: #aaa8a8;
 }
 
+.topButton{/* 오른쪽 하단 탑버튼 */
+    position: absolute;
+    bottom: 20px;
+    right: 70px;
+    transition-duration: 0.2s;
+}
+.topButton:hover{
+    position: absolute;
+    bottom: 30px;
+    right: 70px;
+}
+/* -----------------------------------공통 클라스 */
+.content-title{
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+}
 .blurred {
-    filter: blur(5px); /* 흐리게 처리 */
+    /* 슬라이드 양쪽 사이드 블러처리 이미지들 */
+    filter: blur(2px); 
     /* width: 30%; */
 }
-
 .arrow-button {/* 화살표, 서비스,뉴스룸 */
     border: 0;
     width: 100px;
@@ -162,16 +216,27 @@
     top: 50%;
     transform: translateY(-50%);
     z-index: 999;
+    transition-duration: 0.3s;
 }
-
-.arrow-button.left {/* 왼쪽 버튼 */
+.arrow-button img{
+    width: 50%;
+    height: 50%;
+}
+.arrow-button.left {/* 화살표 왼쪽 버튼 */
     left: 3%;
 }
-
-.arrow-button.right {
-    right: 3%; /* 오른 버튼 */
+.arrow-button.left:hover{
+    left: 2%;
 }
-
-.yogiyo-logo {
-    margin-top: 20px;
+.arrow-button.right {
+    right: 3%; /* 화살표 오른쪽 버튼 */
+}
+.arrow-button.right:hover {
+    right: 2%; /* 화살표 오른쪽 버튼 */
+}
+.red-line{/* 뉴스룸  SERVICE 문구 아래 빨간선*/
+    width: 20px;
+    margin : 0 auto;
+    border-color: red;
+    margin-top: 10px;
 }
