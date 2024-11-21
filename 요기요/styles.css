@@ -1,0 +1,177 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+    font-family: "Noto Sans KR", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.container {
+    max-width: 100%; /* 전체 너비 사용 */
+    margin: 0 auto;
+}
+
+.hero {
+    
+    background-image: url('https://via.placeholder.com/1200x800'); /* 임의의 이미지 */
+    background-size: cover;
+    /* border: 1px solid black; */
+    height: 70vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    position: relative;
+    padding-left: 50px;
+}
+
+.hero-content {/* 메인슬라이드에 삽입된 문구*/
+    max-width: 600px;
+    
+}
+
+.hero-content>h1{
+    /* 메인슬라이드에 삽입된 문구 타이틀 */
+    font-size: 2.5em;
+    color: white;
+}
+.hero-content>p{
+    font-size: 1.2em;
+    margin-top: 20px;
+    color: white;
+}
+.scroll-down {
+    /* background-color: red; */
+    text-align: center;
+    margin: auto;
+    font-size: 1.2rem;
+    position: absolute;
+    bottom: 20px; /* 중앙 아래쪽 위치 */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.service {
+    margin-top: 150px;
+    text-align: center;
+}
+
+.service>h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.service>h2>hr{
+    width: 20px;
+    margin : 0 auto;
+    border-color: red;
+    margin-top: 10px;
+}
+.service-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* 위치 조정 */
+}
+
+.service-items {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* 수직 정렬 */
+}
+
+.service-item {
+    position: relative;
+    flex: 0 0 auto; /* 아이템 크기 자동 설정 */
+    margin: 0 20px; /* 이미지 간 여백 설정 */
+    width: 75%;
+}
+.service-items >.blurred{
+    width: 70%;
+    /* border: 1px solid black; */
+}
+.service-item img {
+    width: 100%;
+    height: auto;
+    
+}
+
+.blurred img {
+    width: 100%; /* 흐린 이미지는 중앙 이미지보다 작게 설정 */
+    height: auto;
+    filter: blur(1px); /* 흐리게 처리 */
+}
+
+
+.newsroom {
+    /* padding: 50px 20px; */
+    text-align: center;
+}
+
+.newsroom h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.newsroom-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.newsroom-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsroom-item {
+    position: relative;
+    flex: 0 0 auto; /* 아이템 크기 자동 설정 */
+    margin: 0 5px; /* 이미지 간 여백 설정 */
+    width: 20%;
+}
+
+.newsroom-item img {
+    height: auto;
+    width: 100%; /* 뉴스 이미지 크기 설정 */
+}
+
+.blurred {
+    filter: blur(5px); /* 흐리게 처리 */
+    /* width: 30%; */
+}
+
+.arrow-button {/* 화살표, 서비스,뉴스룸 */
+    border: 0;
+    width: 100px;
+    height: 100px;
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 100%;
+    font-size: 5rem;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 999;
+}
+
+.arrow-button.left {/* 왼쪽 버튼 */
+    left: 3%;
+}
+
+.arrow-button.right {
+    right: 3%; /* 오른 버튼 */
+}
+
+.yogiyo-logo {
+    margin-top: 20px;
+}
